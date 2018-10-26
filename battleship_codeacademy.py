@@ -6,7 +6,7 @@ print "Let's play BATTLESHIP!"
 from random import randint
 import sys
 
-
+# define the number of turn with a numeric argument  when opening the file. The defult value is 4 turns.  
 turns = 4
 
 if len(sys.argv) >1:
@@ -38,8 +38,7 @@ def random_col(board):
 ship_row = random_row(board)
 ship_col = random_col(board)
 
-# number of  turns for the player to guess the ship position 
-  
+# the player tries to guess the ship position   
 print "Let\'s start!"
 
 for turn in range(turns):
